@@ -1,0 +1,728 @@
+<tw-storydata name="Fatherv2" startnode="1" creator="Twine" creator-version="2.1.3" ifid="71D1EA92-7095-43B8-86AF-A4F0EC71DC75" format="SugarCube" format-version="2.18.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body {
+  background-color: AliceBlue;
+  color: black;
+  font-family: Times New Roman, fantasy;
+  font-size: 150%;
+}
+
+a {
+  color: MediumOrchid;
+}
+
+a:hover {
+  color: Indigo;
+}
+.titlepage {
+  background-color: black;
+  color: black;
+  text-align: center;
+  font-family: Impact, charcoal, sans-serif;
+  font-size: 130%;
+  background-image: url("http://img11.deviantart.net/6639/i/2013/126/a/0/we_re_living_in_the_cloud_by_vaszka-d64b881.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50x-large;
+}
+.father {
+  font-size:350%;
+}
+
+#ui-bar {
+  display: none;
+}
+#story {
+  margin-left: 3.5em;
+}
+
+.marker {
+  background-image: ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 5x-large;
+  font-family: fantasy;
+}
+
+.dontgo {
+  color: MediumOrchid;
+  }
+
+.dontgo:hover {
+   transition: 2s all ease;
+  opacity: 0;
+}
+
+.showme {
+  display: none;
+  color: MediumOrchid;
+}
+
+.dontgo: hover + showme {
+  display: block;
+  background-color: yellow;
+  padding: 20px;
+  }
+
+.coraline {
+  text-align: center;
+  font-style: italic;
+  }
+
+.dedicace {
+  text-align: center;
+  }
+
+.mom {
+  color:MediumOrchid;
+  }
+
+ .mom:hover{
+	opacity: 0;
+   transition: 2s all ease;
+	  }
+
+.todonext {
+  text-align:center;
+  }
+
+
+
+
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
+
+
+
+
+
+
+</script><tw-passagedata pid="1" name="Title page" tags="titlepage" position="497,0">&lt;span class=&quot;father&quot;&gt;Father&lt;/span&gt;
+
+By 
+Ella Siemeni
+
+[[Start|The Beginning]]
+&lt;&lt;set $MomMood to true&gt;&gt;
+&lt;&lt;set $MomMood to 1&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="You ask Mom to lower the volume" tags="" position="510,303">&lt;&lt;if $radio is true&gt;&gt; Mom turns off the car radio while frowning in disgust. She turns her gaze on you.
+
+&quot;Let&#x27;s chat a little, all right honey? I&#x27;m going to miss you when I&#x27;m away, might as well...&quot;
+&lt;&lt;else&gt;&gt; Mom obliges.
+&quot;Actually this could be a great opportunity to talk a little... What do you think?&quot; &lt;&lt;/if&gt;&gt;
+
+[[Close your book. You want to read but don&#x27;t want to upset her.|Mom and Dad talk]]
+[[&quot;But I&#x27;m reading my book...&quot;|Mild Annoyance]] &lt;&lt;set $MomMood to $MomMood-1&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="Mom and Dad talk" tags="" position="664,444">&lt;&lt;if $MomMood lt 0&gt;&gt;&quot;What?&quot;
+
+[[&quot;Why did Dad leave?&quot;you ask.|Why did he leave]] &lt;&lt;else&gt;&gt; &quot;So... Dad uh? Are you um... excited to see him again?&quot; Mom asks.
+Her voices trembles. She holds the wheel tighter and looks far in the distance. The house is not that far out. It feels like you guys have been driving forever.
+
+[[&quot;I don&#x27;t remember him that much...&quot;|Why did he leave]]&lt;&lt;/if&gt;&gt;
+[[I am not sure what to feel...|Why am I getting back]]</tw-passagedata><tw-passagedata pid="4" name="Mild Annoyance" tags="" position="386,360">&quot;You will have all the time to read once you are at your father&#x27;s. And believe me your dad isn&#x27;t going to be up after every foostep you make...&quot;
+
+[[&quot;It&#x27;s only 3 days! Let me read!&quot;|I don&#x27;t matter to you?]]&lt;&lt;set $MomMood to $MomMood -1&gt;&gt;
+[[&quot;Well, of course! You pushed him out of my life!&quot;|Push him out?]]&lt;&lt;set $MomMood to $MomMood -2&gt;&gt;
+[[&quot;I will miss you too..&quot;|Aw, Sweetie]]&lt;&lt;set $MomMood to $MomMood +2&gt;&gt; </tw-passagedata><tw-passagedata pid="5" name="The Beginning" tags="" position="517,155">&lt;h1&gt;BUMP!&lt;/h1&gt;
+You jump harder than the car you are in just did. 
+
+&quot;I&#x27;m sorry! That&#x27;s my fault! I thought this time I could avoid one of these goddamned potholes...&quot;
+
+Mom is not supposed to say goddamn but the habit had only been on the rise with her lately. You don&#x27;t say a thing though. You had a [[nice yellow book]] on your lap and were savoring it, until it fell on the floor of the [[car]].
+
+You pick it up and attempt to get back to the chapter you were in, despite the constant static on the [[radio]].
+
+[[You ask Mom to lower the volume]]</tw-passagedata><tw-passagedata pid="6" name="StoryInit" tags="" position="256,296"></tw-passagedata><tw-passagedata pid="7" name="Aw, Sweetie" tags="" position="446,751">&quot;You know... Your father can be really fun! And it&#x27;s only a matter of 3 days.&quot;
+
+&quot;I guess I am overreacting a bit you know? I am not used to us being apart. Your dad is... your dad. I&#x27;m scared.&quot;
+
+[[&quot;What is scary about Dad?&quot;|Mom and Dad talk]]
+[[Back to reading]]</tw-passagedata><tw-passagedata pid="8" name="Push him out?" tags="" position="388,642">&quot;What do you mean? The last thing I would have wished for you is to have grown up without a father. He left!&quot;
+
+[[&quot;That&#x27;s what you always say, anyway...&quot;|Stop This]]&lt;&lt;set $MomMood to $MomMood-1&gt;&gt;
+[[&quot;He wants to see me now! Why wouldn&#x27;t he want me in his life?&quot;|Why did he leave]]
+[[Back to reading]]</tw-passagedata><tw-passagedata pid="9" name="I don&#x27;t matter to you?" tags="" position="214,548">Mom sighs.
+&quot;I get it! I don&#x27;t matter to you and you won&#x27;t miss me.&quot;
+Her eyes remain fixated on the road. 
+&quot;Doesn&#x27;t really matter that i spent every single days of my life with you for the last 5 years, right? Daddy gets a free pass for leaving. I don&#x27;t get one because I work too much...&quot;
+
+[[&quot;No one is forcing you to go on your vacation with Fish Face!&quot; |Bf is not fish]]&lt;&lt;set $MomMood to $MomMood-2&gt;&gt;
+[[&quot;Mom, relax! You are going to have fun with Larry&quot;|I overreacted]]&lt;&lt;set $MomMood to $MomMood+2&gt;&gt;
+
+
+</tw-passagedata><tw-passagedata pid="10" name="I overreacted" tags="" position="426,1061">You cut her mid-sentence. She was going to go on an infinite rant again. But she usually calms down when thinking about [[Larry|Larry2]].
+
+She tries to let go a little. She realizes she was a bit tense.
+
+&quot;You&#x27;re right... I think I might be overreacting a little. You know I&#x27;m excited to visit...It&#x27;s actually your father who told me about this town. Apparently it&#x27;s very rustic. Said the place was magical.&quot;
+
+[[You hesitate. &quot;Mom? About Dad, I was wondering...&quot;|Mom and Dad talk]]
+[[Back to reading]]</tw-passagedata><tw-passagedata pid="11" name="Bf is not fish" tags="" position="63,668">&quot;Lexy it&#x27;s my honeymoon! And how many times will I have to tell you not to call him that!&quot;
+&quot;I don&#x27;t want to call him Dad!&quot; you asnwer.
+&quot;Then just call him [[Larry]]! And try to be nicer. He is a part of this family now! Accept it and we can live happy lives!&quot;
+
+[[&quot;Have we really ever been a family at all?&quot;|Mad/Sad]]&lt;&lt;set $MomMood to $MomMood -1&gt;&gt;
+[[&quot;I&#x27;m sorry&quot;|You&#x27;re right and I am sorry]] &lt;&lt;set $MomMood to $MomMood +1&gt;&gt;
+
+</tw-passagedata><tw-passagedata pid="12" name="Then what exactly happened?" tags="" position="939,866">&quot;What happened is that you are my priority and every decision I made was taken with YOUR interest in mind.&quot;
+
+</tw-passagedata><tw-passagedata pid="13" name="Stop This" tags="" position="303,878">&quot;Alexis stop! I don&#x27;t wanna have to fight with you now! You didn&#x27;t make any efforts at the wedding please don&#x27;t ruin this for me now.&quot;
+
+[[&quot;I&#x27;m sorry, Mom... I just...|Mom and Dad talk]]
+[[Back to reading]]</tw-passagedata><tw-passagedata pid="14" name="Why did he leave" tags="" position="836,585">&lt;&lt;set $question1 to true&gt;&gt;
+&lt;&lt;if $MomMood lt 0&gt;&gt;&quot;Your father is incredibly irresponsible. I had no clue he was leaving, he was already in a Italy or something when he told me. I suspect he did jail time at some point...&quot;
+&quot;Why would Dad go to prison?&quot; you ask.
+She remains silent.
+&lt;&lt;else&gt;&gt;&quot;Well you know that Dad loves his adventures. I think you, out of all people, get that...&quot;
+You caress the cover of your book. He said he bought it in London.
+&quot;Your father doesn&#x27;t really hold on to anything. It&#x27;s how it is... especially responsibility.&quot;
+Her eyes water slightly. She isn&#x27;t really looking at the road anymore at that point.&lt;&lt;/if&gt;&gt;
+
+[[&quot;So now I&#x27;m not a responsibility anymore?&quot;|Why am I getting back]]
+[[&quot;I guess I&#x27;ll just... read&quot;|Back to reading]]
+</tw-passagedata><tw-passagedata pid="15" name="Why am I getting back" tags="" position="601,683">
+&lt;&lt;if $MomMood lt 0&gt;&gt;&quot;Well your father all of a sudden decided that you existed again. And what your father wants he gets, even the daughter whose birth date he cannot remember apparently.&quot;
+Mom&#x27;s grip around the wheel tightens as she raises her eyebrows. 
+&quot;It&#x27;s just three days okay? Maybe Mom needs a break too.&quot;
+&lt;&lt;else&gt;&gt; &quot;Wouldn&#x27;t you like to build more memories with your father? You still deserve to have some memories with him. He made mistakes but I think he wants it fixed now&quot;&lt;&lt;/if&gt;&gt;
+
+[[&quot;I just don&#x27;t understand why he left in the firt place&quot;|Why did he leave]]
+[[&quot;I&#x27;ll just...finish my book&quot; you say.|Back to reading]]</tw-passagedata><tw-passagedata pid="16" name="Sweet Moment" tags="" position="1005,692">[[Why did he leave]]
+
+[[Back to reading]]</tw-passagedata><tw-passagedata pid="17" name="Back to reading" tags="" position="125,1201">&lt;&lt;if $MomMood gte 0&gt;&gt;&quot;So you really like that book, huh? I wouldn&#x27;t have figured that despite his flaws, your father occasionnally hit the nail on the head from time to time&quot;
+&lt;&lt;else&gt;&gt;&quot;Who got you that book again? Your dad I assume... He is always late for Christmas but it doesn&#x27;t matter. His presents are so just great! Just as great as that stupid nickname he gave you&quot;
+She sounds bitter. Like she doesn&#x27;t get the presents don&#x27;t matter that much anymore. You do like the nickname though. People always botch your name anyway...
+&lt;&lt;/if&gt;&gt;
+[[Open the book on the first page]]
+[[Keep reading]]
+</tw-passagedata><tw-passagedata pid="18" name="You&#x27;re right and I am sorry" tags="" position="152,886">&quot;I know it&#x27;s hard to accept someone new into our routine but I assure you, he is not here to be any kind of replacement.&quot;
+
+[[&quot;I know...Well..&quot;|Mom and Dad talk]]
+[[Back to reading]]</tw-passagedata><tw-passagedata pid="19" name="Mad/Sad" tags="" position="7,908">You hear a laugh. Or a sob. Maybe a bit of both.
+&quot;Listen, we&#x27;ll pick up the pieces on our own time. If you put the efforts in we can be an actual family again. With Larry. Right now, I&#x27;m asking you for three days off...&quot;
+
+[[&quot; I&#x27;m upset I didn&#x27;t see Dad for so long&quot;|Why did he leave]]&lt;&lt;set $MomMood to $MomMood-1&gt;&gt;
+[[&quot;Okay&quot;|Back to reading]]
+
+</tw-passagedata><tw-passagedata pid="20" name="Get inside the house" tags="" position="124,1452">The house is as bright and lively as it can be with all of  those boxes hanging around. [[Childhood memories|Childhood Memories (living room)]] rush through your mind. The chaos of this place cannot overshadow the peace it once held.
+
+Dad is not in sight. You take your boots off. The book and your bags are still in your hands.
+
+[[What to do next?]]
+&lt;&lt;set $Exploration to true&gt;&gt;
+&lt;&lt;set $Exploration to 0&gt;&gt;
+</tw-passagedata><tw-passagedata pid="21" name="Go to your bedroom" tags="" position="343,1745">&lt;&lt;set $Exploration to $Exploration+1&gt;&gt; A very simple yet very nice room. Not that nice, but [[you&#x27;ve done so much in here|Childhood memories (bedroom)]]. It&#x27;s just a wooden bed and a tiny Ikea closet with a coat hanger in a corner. The bed is unmade. He didn&#x27;t even change the sheets from the last time you came. 
+
+It&#x27;s all green in there. Mint to be precise, a little aggressive to the eye. Your taste has changed a little now.
+
+You notice a bunch of traces of [[marker on the wall]], right inside the door frame. It&#x27;s cute but you and Dad will have to make some changes to the place.
+
+[[If he is to be found at all at some point...|What to do next?]]
+</tw-passagedata><tw-passagedata pid="22" name="marker on the wall" tags="marker" position="520,1760">[[You were so small|Go to your bedroom]]
+
+ ALEX  
+iS A BIG GIRL!:)
+         -
+		 -	 
+		 -
+		 -
+5 years  - 1m08
+         -
+		 -
+4 3/4 yrs-  1m05
+		 -
+		 -
+		 -
+		 -
+2 1/2	 - 88cm
+		 -
+2 years  - 84 cm
+		 -
+		 -
+		 
+</tw-passagedata><tw-passagedata pid="23" name="Childhood memories (bedroom)" tags="" position="414,2033">playingwithelmo-imaprincessinacastle-iwantitallgreen-areyousure-thereisastrangefigurelookingatmeatnight-thatsjustyourcoat-youhavenoreasontohide-myfriendvivicaplaying-shespilledapplejuice-itookblame-dadnoyell
+
+[[You have had a lot of nightamres here...|Go to your bedroom]]</tw-passagedata><tw-passagedata pid="24" name="Childhood Memories (living room)" tags="" position="315,1428">playingdollswithdad-mommyyell-dancinginfrontoftv-sunset-foodoutinthegarden-smallplasticcup-daddyinaredshirt-hereisyourpresentbutmybirdthaywaslastmonth-iamalwayslateforthat
+
+[[It feels like home...|Get inside the house]]</tw-passagedata><tw-passagedata pid="25" name="Look at picture on the floor" tags="" position="489,1884">Amidst a bunch of old books and unfolded clothes, lies a framed portrait of you and Dad. It&#x27;s dated November 3rd. The amusement park. The glass is slightly broken.
+
+He looks the same mostly but with smoother traits. A green shirt and shorts. You shrug. A uniform choice of colour for an outfit. Not the best combination. But this day was yours and he never cared about that kind of things. You, on the other hand were wearing a radiant pink outfit with a pointy hat.
+
+He looks radiant. You are in tears. His laughter is a way of trying to make you feel better. No idea why he deemed it the best time to take that picture.
+
+[[But you feel you are getting a little bit distracted.|Go to dad&#x27;s bedroom (Exploration)]]</tw-passagedata><tw-passagedata pid="26" name="Find &quot;Dad&quot; in the kitchen" tags="" position="642,2011">The sound of ustensils clicking against each other fills the room.  Your father is looking for something inside one of the drawers. He lets a shriek upon noticing your presence.
+
+&quot;Hello Honey...!&quot;, he sighs.
+&quot;Hi!&quot;
+
+&quot;I didn&#x27;t hear you come in. How long have you been there? How was the trip? You grew up so much!&quot; The small talk. Classic Dad. Never really knew how to communicate with you.
+&quot;Anyway are you hungry? We can eat anything you want.&quot;
+
+[[Ask Dad to eat food]]
+&lt;&lt;if $someonehere is true&gt;&gt; [[Mention man in the garden]] &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="Childhood Memories (study)" tags="" position="219,1998">playingraymanonthepc-oldgamethatone-ipretendtobeastylistonmydesk-at-youwillbefamousonedaycutiepie-areyoufamousdad-wellalotofpeopleknowme-theydontalwayslikeme-dontopenthatdrawer-imbusygotothebedroom
+
+[[This is definitely your favorite room|Go to the study (Exploration)]]</tw-passagedata><tw-passagedata pid="28" name="Childhood Memories (dad bedroom)" tags="" position="568,1607">dadwakeup-iwannasleep-nightmares-whatsyourdreams-theworldfashion-ithinkdadwasherewithagirlonce-angry-mom-hesgonnatraveltheworldbringbackbooksforme-notsomuch-dontlookinthecloset-iloveyou-sleep
+
+[[Well you wouldn&#x27;t like to sleep in here in that state|Go to dad&#x27;s bedroom (Exploration)]]</tw-passagedata><tw-passagedata pid="29" name="Childhood Memories (bathroom)" tags="" position="871,2382">vomitinthetoilet-whydiditakethemilkshake-momsaidnodairydadforgot-bath-foamtys-imadethefamilywithmyfiguresonthewall-mommydaddydogdeadhouse-momhasmakeupdaddyhasrazors-iswallowedwater-brushingteeth-magazines-shavingcreamsmells
+
+[[Back|Go to the bathroom]]</tw-passagedata><tw-passagedata pid="30" name="Go to kitchen (Exploration)" tags="garden" position="23,1737">A kid never sees the kitchen as anything but the place where his guardian occasionnally burns mac and cheese in and where the [[fridge]] is usually not full enough. Yet you feel a rush of [[emotions|Childhood Memories (kitchen)]] come back as you step in. Dad is not there. 
+
+[[Back|What to do next?]]
+[[Go to the garden|Yes but...]]
+</tw-passagedata><tw-passagedata pid="31" name="Go to the study (Exploration)" tags="" position="277,1875">&lt;&lt;set $Exploration to $Exploration+1&gt;&gt; Now Dad never cared about decorations. Which explains why you&#x27;ve always [[loved|Childhood Memories (study)]] that room in particular.
+
+The asian armor in the corner.
+                                          The Kenyan spear on its right.	
+										  The Chinese bonzai.
+                                          The dead monkey.		  						   								                                    There&#x27;s a painting of a naked lady on the wall.			
+... This was not here before.
+
+This is almost a sacred space. How can Dad work in there?
+
+[[Approach the desk]]
+[[Where IS Dad anyway?|What to do next?]]
+</tw-passagedata><tw-passagedata pid="32" name="Approach the desk" tags="" position="92,2026"> Looks like Dad has been through all of his files and taking things out of his drawers. Cleaning. For once.
+
+He let out [[a very dusty picture|Desk Picture]] on here. One of these old things in sepia.</tw-passagedata><tw-passagedata pid="33" name="Childhood Memories (Garden)" tags="" position="731,1584">jumpingontrampoline-theresnoswinglikeatsophia-laughafternoon-fairystories-inthe gardenfishlake-itsmorelikeabuiltpuddle-idremoftravelingtoo-summerfoodtomatoes</tw-passagedata><tw-passagedata pid="34" name="Desk Picture" tags="" position="193,2175">Mom and Dad in a broken frame. Probably the third picture of them you have seen to far.
+
+Well..Mom&#x27;s face is a bit scratched out. It&#x27;s a bit harder to get her featuress but not impossible. She&#x27;s wearing a cheerleader&#x27;s outfit and has a cross around her neck. He  has gel in his hair, a cigarette in his mouth and a leather jacket.  He is touching her bare stomach. They look so cool!
+
+[[Back|Go to the study (Exploration)]]</tw-passagedata><tw-passagedata pid="35" name="Garden (exploration)" tags="" position="619,1450">Dad is over there in a hawaiian shirt looking deep in thoughts over an empty flower bed. He standing there, his arms straight down, not making any kind of movement. He looks at you with the most intrigued expression.
+
+&quot;You&#x27;re coming tomorrow...&quot; he mumbles.
+
+He thought the day was tomorrow well dammit okay.
+He is still happy to see you, he just thought you were coming tomorrow.
+
+&quot;You&#x27;ve grown. A lot.&quot;
+
+[[You go for a hug. &quot;I missed you&quot;|Go for a hug]]
+[[&quot;It&#x27;s been 5 years&quot; you answer.]]</tw-passagedata><tw-passagedata pid="36" name="Go for a hug" tags="" position="737,1735">Dad briefly lets you put your arms around [[him]]. He puts his hand around your shoulders and tightens his grip before letting you go and looking away. 
+
+Classic Dad. Never lets anyone &lt;&lt;italics&gt;&gt;touch him.&lt;&lt;/italics&gt;&gt;
+
+You look around. The garden is very much brown and muddy. It used to be [[green|Childhood Memories (Garden)]]. 
+
+[[Ask Dad to play]]
+[[Mention the noise inside]]</tw-passagedata><tw-passagedata pid="37" name="&quot;It&#x27;s been 5 years&quot; you answer." tags="" position="862,1596">Dad&#x27;s expression darkens.  
+
+&quot;I&#x27;m here now, aren&#x27;t I?&quot; He kicks a rock. Then turns around looking at the very much [[decrepit|Childhood Memories (Garden)]] garden.
+
+&quot;I think it&#x27;s time for a change. There&#x27;s a lot to replace.&quot;
+
+There&#x27;s no more fish in the pond.
+
+[[Ask Dad to eat]]
+[[Mention the noise inside]]</tw-passagedata><tw-passagedata pid="38" name="Open the book on the first page" tags="" position="5,1054">                                  &lt;span class=&quot;dedicace&quot;&gt;Property of:&lt;/span&gt;
+						 &lt;span class=&quot;coraline&quot;&gt;My little Alexis! One day you&#x27;ll be the best traveller (or a travelling fashion designer!&quot;&lt;/span&gt;
+								 
+								   &lt;span class=&quot;dedicace&quot;&gt;From:&lt;/span&gt;
+							     //Dad//
+									
+[[Back|Keep reading]]
+
+</tw-passagedata><tw-passagedata pid="39" name="Keep reading" tags="" position="136,1330">Mom drives uphill to your Dad&#x27;s home, a very isolated small house on Gypsy Road. The house of the closest family here, the Robinsons, is a good ten minutes away by foot. You can see it from where you are.
+&quot;I&#x27;m surprised he managed to keep this house after being away this long.&quot; &lt;&lt;if $MomMood lt 0&gt;&gt; Bit suspect if you ask me, he doesn&#x27;t even keep pants this long.&lt;&lt;/if&gt;&gt;
+
+She drives you to the front of the house. She won&#x27;t come out. It leads to yells. She is already late to go pick up Larry anyway.
+
+&quot;Have a nice weekend. &lt;&lt;if $MomMood gte 0&gt;&gt; Love you, Honey! &lt;&lt;/if&gt;&gt;&quot;
+
+The house is small and cozy looking. It&#x27;s strange to be back.
+
+[[Get inside the house]]
+</tw-passagedata><tw-passagedata pid="40" name="What to do next?" tags="todonext" position="188,1582">[[He might be cooking something. You decide on going to the kitchen.|Go to kitchen (Exploration)]]
+[[He might be working. Go to the study.|Go to the study (Exploration)]]
+[[Maybe he is asleep. Quietly go to his bedroom.|Go to dad&#x27;s bedroom (Exploration)]]
+[[You wanna see your old stuff. Go see your bedroom.|Go to your bedroom]]
+
+&lt;&lt;if $Exploration gte 3&gt;&gt;
+Some noise is coming from the kitchen.
+[[Go to the kitchen|Find &quot;Dad&quot; in the kitchen]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="Go to dad&#x27;s bedroom (Exploration)" tags="" position="421,1593">&lt;&lt;set $Exploration to $Exploration+1&gt;&gt; You open the door slowly and are taken aback. What looks like a billion of snakes is covering the floor. You catch your breath. It&#x27;s a bunch of ties, from his drawer. His favorites.
+
+Now your dad is messy. That&#x27;s not a mystery. But the bed has been moved over, a lamp has fallen on the floor, some pictures have been taken down. You&#x27;ve [[known this place|Childhood Memories (dad bedroom)]] through pretty dark times but this is intense.
+
+[[A picture|Look at picture on the floor]] on the floor attracts your attention.
+[[You leave your things here|What to do next?]]
+</tw-passagedata><tw-passagedata pid="42" name="Ask Dad to eat food" tags="" position="348,2265">&quot;Food! You need to eat! Of course!&quot;
+
+He starts looking throungh the drawers again. 
+
+&quot;Why not go brush your teeth in the kitchen I will make you a milkshake quickly in the meantime and then we will cook wat you want.&quot;
+
+[[Go to the bathroom]]</tw-passagedata><tw-passagedata pid="43" name="Ask Dad to play" tags="" position="691,1872">&quot;Heh... I mean I took down the trampoline and stuff!I don&#x27;t really have any games except for toys that you are a bit too old for...&quot;
+
+[[Ask Dad to eat]]
+</tw-passagedata><tw-passagedata pid="44" name="Go to the bathroom" tags="" position="462,2357">There&#x27;s one [[room|Childhood Memories (bathroom)]] you didn&#x27;t look into. It&#x27;s the first door of the corridor and yet, you ignored it. He might have been there this whole time. A pot of gel on the counter is open. You didn&#x27;t pay attention to it but he is indeed wearing his hair up today.
+
+You notice a little razor on the top-left corner of the sink. It looks way more ancient than the ones Larry uses.
+
+[[Observe the razor]] 
+
+[[Brush your teeth|Attack starts]]</tw-passagedata><tw-passagedata pid="45" name="Childhood Memories (kitchen)" tags="" position="26,2152">wecooktogetherisfun-iloveicecreambutcanthaveit-breakfastatdinner-youthinkdaddywantsyoutoleave?-iwishicouldtravelwithyou-iheardtheyhavethebestchickeninindiaiwillmakeyouoneonce-idratherkraftdinner-ihatebroccoli
+
+[[Back|Go to kitchen (Exploration)]]</tw-passagedata><tw-passagedata pid="46" name="Observe the razor" tags="" position="634,2178">&lt;&lt;set $razor to true&gt;&gt;It looks incredibly [[sharp|Attack starts]].
+</tw-passagedata><tw-passagedata pid="47" name="Attack starts" tags="" position="609,2467">You hear a loud noise in the kitchen. A male scream. 
+
+A vase seems to be breaking and multiple boxes fall down. The sounds get muffled. Groans and signs of struggle. It&#x27;s like a fight is going on.
+
+[[Stay inside the room. If an intruder is in the house you have to stay inside!|Bad ending 1-1]]
+
+[[Get out and help dad]]</tw-passagedata><tw-passagedata pid="48" name="Bad ending 1-1" tags="" position="787,2273">You push your ear against the door, your heart beating uncontrollably. Your whole self shakes as you hear various objects falling down the floor, followed by the noises of a struggle and more glass breaking. 
+
+More muffled sounds. Someone groaning.
+
+Then steps coming through the hallway. Running toward [[you|Bad ending 1-2]].
+
+</tw-passagedata><tw-passagedata pid="49" name="Bad ending 1-2" tags="" position="801,2512">The handle of the door you are currently leaning against starts moving. Once, twice, now more and more. Soon, it&#x27;s uncontrollable. 
+
+You get back a little, your hands shaking. The back of your legs meet something cold and you have just enough reflexes to grab the edge of the tub and make your fall less abrupt. 
+
+The person thumps on the door and start screaming.
+
+&quot;Who&#x27;s in there?&quot;
+
+Your heart skips a beat. It&#x27;s your [[father|Bad ending 1-3]]&#x27;s voice.</tw-passagedata><tw-passagedata pid="50" name="Bad ending 1-3" tags="" position="682,2748">&quot;Dad?&quot;
+&quot;Alex? Is that you?&quot;
+
+You painfully get yourself back up. You ignore the pain in your lower back and run up to the door. 
+
+Someone on the other side is doing the same. Heavy footsteps suddenly come to your father. You hear, a shriek of pain and the sound of a loud and cutting object piercing a skull. Someone falls on the floor. 
+
+Blood starts dripping under the door.
+
+&quot;You can [[come out]], Alex!&quot; says your dad.</tw-passagedata><tw-passagedata pid="51" name="come out" tags="" position="835,2716">You come out of the bathroom and see a disfigured silhouette on the floor. It&#x27;s wearing a Hawaiian shirt, exactly like one of your fathers. The corpse is of the same height and body shape as your Dad.
+
+Yet your father is standing right next to it. His green shirt bloody, an axe in his hand. You fall to your knees, throwing up after such a scene - a sight you would never forget. Your dad quickly pulls a tablecloth from the kitchen and puts it over the body.
+
+&quot;I&#x27;m sorry you had to see this my love...&quot;
+
+Heavy tears run down your cheeks. Your throat is burning. You realize you fell down in the blood. It&#x27;s all over your knees.
+
+&quot;He started chasing me during my vacations. Said I had something that was his. I met him after going to a fortune teller. I&#x27;m glad I got rid of him now&quot;
+
+[[You gather the strenght to run to your father|run up to him]]</tw-passagedata><tw-passagedata pid="52" name="Attack the man with Dad&#x27;s razor." tags="" position="388,2487">You quietly but surely to the man&#x27;s back and open the razor. You don&#x27;t really know where to hit. It doesn&#x27;t really look like you could stab him but you ould take him by surprise.
+
+You cut a clumsy but deep cut in his shoulder and which takes him by surprise. He turns around, a painful grin upon his face. You recognize him despite it. He has a your father&#x27;s face.
+
+[[What?]]</tw-passagedata><tw-passagedata pid="53" name="run up to him" tags="" position="782,2903">You try to hug your father but he keeps you from hugging him. You look at him.
+
+“I&#x27;m full of blood.”
+
+He puts his hand on your shoulder.
+
+“Do you think the police will be there soon?”
+
+“Let&#x27;s not call them! They won&#x27;t believe you.”
+
+“Believe me?”
+
+“Us! What will we tell them about all this? We have to bury the body. Clean up. And when it&#x27;s done we will call and say that we have been roobbed.”
+
+[[Bury the body.]]</tw-passagedata><tw-passagedata pid="54" name="Bury the body." tags="" position="936,2900">You and Dad bury the body in the garden. It takes what feels like ages. The body is heavy and neither you nor Dad are strong enough to carrying it. Each step of burying this man that looks so much like your father is torture.
+
+“I almost lost you” Dad constantly repeats “This other one was much stronger than I was. I don&#x27;t thing I would be here right now if you hadn&#x27;t been here.”
+
+The weekend goes back eerily. You feel empty. &lt;div class=&quot;mom&quot;&gt;Mom&lt;/div&gt;is supposed to pick you up after three days but she ends up calling and telling you that she has decided to take a few more days off. Her stay at the hotel was nice. She went where Dad had been before. Loved the fortune teller. She wants to travel more. A couple more days turn into a weeek, then two. Then she doesn&#x27;t even call anymore
+
+[[You live with Dad now]]</tw-passagedata><tw-passagedata pid="55" name="You live with Dad now" tags="" position="1011,3101">Every morning Dad wakes you up to go to school. He drives you there. He is never late to meet any of your teachers anymore. He throws the best parties and allows you to go to sleepover. He never misses a play you have a part in.
+
+It&#x27;s all fun and games until you go to bed at night, after watching TV with him. When you get into the bedroom and close your eyes and your mind accidentally goes back to that first night on that first weekend.
+
+After burying the body. The one that looked like him. That very same night, Dad had given you a kiss on the cheek and whispered.
+
+“You and me will be together now. I feel so lucky you were there. This would have never worked otherwise. I love you Alexandra.”
+
+And from then on you could never sleep tight again. 
+
+END
+
+[[Back to Menu|Title page]]</tw-passagedata><tw-passagedata pid="56" name="radio" tags="" position="698,171">&quot;[crrrk]...and this just in, several citizens have reported the presence [buzz] of an unidentified man roaming the streets completely naked! The police is [frishh] to find the suspect as he has been deemed potentially violent. Many fear for their children ...[crrk]&quot;
+&lt;&lt;set $radio to true&gt;&gt;
+[[You usualy don&#x27;t really pay attention to the news|You ask Mom to lower the volume]]</tw-passagedata><tw-passagedata pid="57" name="nice yellow book" tags="" position="345,171">Robert Louis Stevenson
+
+TREASURE ISLAND
+
+Your absolute favorite book. The cover is a bit broken but it reminds you of Dad to read it and you decided it would fit the occasion to read it for the billionth time during [[the trip|The Beginning]] to his place.</tw-passagedata><tw-passagedata pid="58" name="Get out and help dad" tags="" position="162,2625">You take a deep breath and in a rush of heroism, open the door and find your Dad fighting with a man of the same stature. The man seems to be overpowering him. He has his back on you and a Hawaiian shirt on, holding your father against the wall by the neck.
+
+&quot;Help&quot; Dad whispers.
+
+[[Attack the man with Dad&#x27;s razor.]]
+</tw-passagedata><tw-passagedata pid="59" name="What?" tags="" position="427,2678">He looks at you with surprise and fear. The other one - the first tries to reach out to you for you to give him something. You notice your hand is bleeding somehow, you&#x27;re holding the razor wrong.
+
+For the first time, since you have see him, the man who had been violent speaks.
+&quot;Alex?&quot;
+
+You have to think, quick.
+
+[[Give the razor to the dad asking for it]]
+[[Ask what is going on]]</tw-passagedata><tw-passagedata pid="60" name="Ask what is going on" tags="" position="445,2865">The sight of the two identical silhouettes sends shiver down your spine. A feeling of hopeleness takes over you. 
+
+Your father, in green, the one you saw earlier, looks helpess and hesitant. He reaches out to you to try and grab the razor. 
+This man, with your father&#x27;s face, with his hawaiian shirt, looks at you before holding his shoulder. He is just now feeling the pain.
+
+&quot;Alex! It&#x27;s me! Give me the razor, I&#x27;m in danger...” pleads your father. 
+
+&quot;Do not listen to him Lexy!” says the other, injured father. 
+
+[[What&#x27;s my favorite color?]]
+
+[[Attack Dad.]]
+
+[[Attack Injured Dad.]]</tw-passagedata><tw-passagedata pid="61" name="Give the razor to the dad asking for it" tags="" position="314,2797">You give the razor to your father. The second one screams for you to stop. 
+Your father grabs him and pass the razor across his throat quickly. Blood comes out of the neck, streaming down the Hawaiian shirt. The two reds almost mix up together.
+
+The man with your father&#x27;s face fall down, trying to reach out to you.
+
+&quot;Alex...&quot; he chokes before his body hits the ground.
+
+Your father&#x27;s green shirt is dripping with blood. He looks shoked and somehow disappointed.
+
+He looks at [[you]].
+
+</tw-passagedata><tw-passagedata pid="62" name="Yes but..." tags="" position="12,1916">CLUNK!
+
+You hear a sound coming from inside the house. Dad is inside of the house, you think. 
+
+You turn around and prepare yourself to turn around and greet him when you notice something in the garden. There is a figure. A tall man standing in the garden, immobile.
+
+You get confused for a second. Dad doesn&#x27;t really like having visitors. It means he&#x27;d have to clean. Yet the sound inside was pretty clear. And there&#x27;s most definitely someone in the garden.
+&lt;&lt;set $someonehere to true&gt;&gt;
+[[Look for Dad inside again|What to do next?]]
+</tw-passagedata><tw-passagedata pid="63" name="Ask Dad to eat" tags="" position="930,1974">&quot;Uh sure... I don&#x27;t really have a lot to eat! Forgot to do the groceries but we will find something to do.&quot;
+
+He goes to the direction of the house. You stay behind a little bit. You are a bit disappointed. He is really cold.
+
+[[Follow Dad inside the house]]</tw-passagedata><tw-passagedata pid="64" name="Mention the noise inside" tags="" position="1031,1681">&quot;A noise? What... kind of noise?&quot;
+&quot;Like something was falling!&quot;
+
+Dad looks towards the house. A frightened expression on his face. 
+
+&quot;It&#x27;s probably nothing Alex...&quot;
+
+You look towards the house as well. It&#x27;s way nicer from the back than from the front.
+
+&quot;Stay here&quot; your Dad says. He gets inside the house.
+
+</tw-passagedata><tw-passagedata pid="65" name="him" tags="" position="845,1838">smellsthesame-bitheavierthanbefore-feelsdifferent-itsbeensolong</tw-passagedata><tw-passagedata pid="66" name="Larry" tags="" position="34,498">helloalexmynameis-idontcare-whyishestillheremommy-boughtmeadollhouseimtoooldforthat-iamnotababy-donttellmewhattodo-igetsadatnight-larrycanbenice-lookslikeafish-bigeyes-somethingweirdaboutthisguy-marrieditsearlyits[[done|Bf is not fish]]
+
+</tw-passagedata><tw-passagedata pid="67" name="Larry2" tags="" position="543,907">helloalexis-mynameislarry-heseemsabittooquiet-heisnicebuttriestoohard-proposalalready-somethingfishyaboutthisdude-idontknowwhy-itsjusttoomuch-idontwanttobethree-alonewithhimwhenmomisatwork
+
+[[Larry is alright I guess...|I overreacted]]</tw-passagedata><tw-passagedata pid="68" name="car" tags="" position="817,287">A rush of random moments of your life bounce around in your head.
+
+schooldays-imsick-rainonthewindows-triptothezoo-peopleonthesidewalklookingatus-friendsleftcandywraps-yougottacleanup-flattireimgonnabelate-carefulyougotmudonyourshoes
+
+Why is it so easy for cars to hold memories. They&#x27;re hardly things that bring you from point A to point [[B|The Beginning]].</tw-passagedata><tw-passagedata pid="69" name="you" tags="" position="166,2910">You fall to your knees, throwing up after such a scene - a sight you would never forget. Your dad quickly pulls a tablecloth from the kitchen and puts it over the body.
+
+&quot;I&#x27;m sorry you had to see this my love...&quot;
+
+Heavy tears run down your cheeks. Your throat is burning. You don&#x27;t know what you just saw, or why. You cannot even mutter anything. You don&#x27;t understand what just happened. It all went so fast. You have never heard of anything like this happening in your life... 
+
+[[Dad walks towards you]]</tw-passagedata><tw-passagedata pid="70" name="Dad walks towards you" tags="" position="278,2942">&quot;This is not what should have happened. I came here to be a better father! I came here to make you happy. You had to think I was perfect. But I failed. And now my existence has no meaning.&quot;
+
+You get back a couple steps. Your hands violently shaking.
+
+&quot;You know she won&#x27;t come back. He wanted to be back in your life. But her? She regretted staying? It&#x27;s coming for her too. It&#x27;s coming so that she will get to enjoy her life.&quot;
+
+[[Ask about her]]
+
+</tw-passagedata><tw-passagedata pid="71" name="Ask about her" tags="" position="193,3052">Who is he talking about? Who&#x27;s not going to get back into your life?
+
+&quot;He told her about the parlour. The one where people go to get their wishes granted. He didn&#x27;t know they were real, he had not seen me yet... He always regretted leaving for so long. But your mother? She wished she had never stayed. She is probably already gone...&quot;
+
+Dad keeps getting closer and closer to you. Tears start running down his cheeks.
+
+&quot;I have no purpose. You saw me kill him. I cannot be perfect anymore. Yet you have no one now. What&#x27;s the point of us [[existing]] anymore?&quot;
+
+</tw-passagedata><tw-passagedata pid="72" name="existing" tags="" position="164,3197">Dad jumps on you and runs his razor clean around your throat. It feels cold and doesn&#x27;t hurt. Not right away. 
+
+You fall down on the floor, struggling not to fall into the darkness. Before you lose consciousness, you have time to see the blood come out of his own throat as he turns the razor to himself in a shriek of pain. Some weird yellow goo comes out as well.
+
+You think about Mom.
+You remember Dad.
+You fall asleep.
+
+END
+
+[[Back to Menu|Title page]]</tw-passagedata><tw-passagedata pid="73" name="&quot;What&#x27;s my birth date?&quot; you ask." tags="" position="637,2994">They both hesitate. Injured Dad has a look of panic in his face. Dad looks focused.
+
+“Sometime in the fall, I am sure of that.” Dad says.
+
+“November. The very beginning of it” cuts Injured Dad.
+
+[[Attack Dad.]] 
+
+[[Attack Injured Dad.]] </tw-passagedata><tw-passagedata pid="74" name="Where did we go for my fifth birthday?" tags="" position="525,3011">The interrogation seems to be making them anxious.
+
+&quot;Which birthday was it?&quot; asks Injured Dad.
+
+&quot;The park?&quot; says Dad.
+
+&quot;The //attraction// park?&quot; retorts Injured Dad.
+
+[[&quot;What&#x27;s my birth date?&quot; you ask.]] 
+
+[[Attack Dad.]] 
+
+[[Attack Injured Dad.]] </tw-passagedata><tw-passagedata pid="75" name="What&#x27;s my favorite color?" tags="" position="383,3053">Both Dads look at you, perplex. They then understand what you are trying to do. 
+
+“Yellow?” whispers Injured Dad.
+
+“It&#x27;s Green!” Dad says with assurance.
+
+[[Where did we go for my fifth birthday?]] 
+
+[[Attack Dad.]] 
+
+[[Attack Injured Dad.]] </tw-passagedata><tw-passagedata pid="76" name="Attack Injured Dad." tags="" position="600,3244">Without notice you run up to the injured Dad, with a scream and try to slice his throat. He puts his arms up in the air and your razor makes several cuts in his arms and hands. He screams in pain and pushes you back. Now close enough to get to you, Dad grabs the razor and approaches the injured Dad.
+
+Your father grabs him and pass the razor across his throat quickly. Blood comes out of the neck, streaming down the Hawaiian shirt. The two reds almost mix up together.
+
+The man with your father&#x27;s face fall down, trying to reach out to you.
+
+&quot;Alex...&quot; he chokes before his body hits the ground.
+
+Your father&#x27;s green shirt is dripping with blood.
+
+[[Dad walks towards you]]</tw-passagedata><tw-passagedata pid="77" name="Attack Dad." tags="" position="390,3242">Without notice you run up to Dad, with a scream and try to slice his throat. He puts his arms up in the air and your razor makes several cuts in his arms and hands. He screams in pain and pushes you back. Now close enough to get to you, Injured Dad grabs the razor and approaches Dad.
+
+He slices his throat clean. Dad falls on the floor. 
+Injured Dad turns and looks at [[you|you1]].</tw-passagedata><tw-passagedata pid="78" name="you1" tags="" position="457,3396">You fall to your knees, throwing up after such a scene - a sight you would never forget. Heavy tears run down your cheeks. Your throat is burning. You realize you fell down in the blood. It&#x27;s all over your legs.
+
+Injured Dad runs up to you and hugs you. He never used to hug you before.
+
+&quot;I&#x27;m sorry baby... I never thought he would have followed me in here.&quot;
+
+You look bad at Dad. His face starts melting slowly until it becomes unrecognizable. The body looks like nothing more than a doll with a heavily burned face. You sigh. You don&#x27;t know what this is but it was dangerous. 
+
+You and your father, injured, both embrace for what seems to be hours. You both get up and go out, walking up the Gypsy Road to the Robison&#x27;s house.
+
+[[Get out of the house]]</tw-passagedata><tw-passagedata pid="79" name="Get out of the house" tags="" position="587,3454">As you and Dad get out of the house, you ask him what happened.
+
+&quot;I was in the garden and when I came back I saw this man looking exactly like me and you were going away. He had that look on his face while looking at you I didn&#x27;t really think and attacked him.”
+
+You ask what the creature is.
+
+&quot;I&#x27;m not sure. Some kind of curse. I only know I caught him on my trip. I met this old woman in that parlour. Grants you these sort of... requests. What you desire the most. But she told me wishes can manifest in unexpected ways. I should call your Mother... Tell her not to go there.”
+
+You ask him what it is he wished for. What he wanted the most.
+
+&quot;My wish was for you. I wanted to change, I wanted you to have the father you deserve.”
+
+END
+
+[[Back to Menu|Title page]]</tw-passagedata><tw-passagedata pid="80" name="Mention man in the garden" tags="" position="787,2067">You tell Dad about the man that you have seen in the garden. Was he a friend of his?
+
+His face turns pale. &quot;What did he look like? Nevermind! Go to the study I have a gun in one of the large closets in my desk... I&#x27;m going to try to see what&#x27;s going on. You stay safe.&quot;
+
+[[Go to the study]]
+</tw-passagedata><tw-passagedata pid="81" name="Go to the study" tags="" position="914,2183">You get inside the study and close the thick glass door behind you. You frantically search all of the drawers and the mess that is your father&#x27;s desk. You eventually find it in a box under it.
+
+You didn&#x27;t know your father had that kind of thing in his house. Maybe Mom was right about him.
+
+A noise comes from the kitchen. Someone has come in.
+
+[[You try to get in the corner of the room]]
+</tw-passagedata><tw-passagedata pid="82" name="You try to get in the corner of the room" tags="" position="995,2304">You heart beats uncontrollably as you hear various objects falling down on the floor, followed by the noises of a struggle and more glass breaking. 
+
+More muffled sounds. Someone groaning. Then steps coming through the hallway.
+
+You hear your father&#x27;s voice screaming &quot;Baby! He is coming to you! Careful!&quot;
+
+&quot;What?&quot; answers a second voice, almost identical to your father&#x27;s.
+
+Soon, a black figures appears through the glass door. The glass is too thick for you to see its traits.  He tries to open the door.
+
+[[Shoot the door]]
+</tw-passagedata><tw-passagedata pid="83" name="Shoot the door" tags="" position="1006,2451">The glass of the door breaks down as the shadow takes the bullet in the chest. By the hole it made in through the glass you can see a face that looks like your father. He lets out a shriek of excruciating pain as he falls on the floor. His voice sounds very similar to the one your father has but twisted in pain the pitch is a bit higher.
+
+Another shadow,  comes to the man and hits him with an object. You recognize your father as well, you just talked to him in the kitchen. The man on the floor screams again until his shrieks die down. Blood runs into the door.
+
+You get so shocked that you let the gun fall down the floor.
+
+[[You wait in anticipation]]</tw-passagedata><tw-passagedata pid="84" name="Do nothing" tags="" position="1131,2427">Double-cliquez sur ce passage pour le modifier.</tw-passagedata><tw-passagedata pid="85" name="You wait in anticipation" tags="" position="1088,2612">Your Dad comes into the room.
+
+&quot;Good job, Baby. You shut the intruder.&quot;
+
+You stay in the corner and wait. Your whole body is tense. Your hands are shaking.
+
+&quot;Why did the intruder have your face?&quot; you ask him.
+
+Dad stops, taken aback. He sighs.
+
+&quot;I didn&#x27;t want you to know. I didn&#x27;t want you to have to see it. This monster has been following me since one of my vacations. He wanted to replace me. To act as your Dad. But thanks to you I vanquished it. Now we can stay together.&quot;
+
+You are not sure you believe him.
+
+[[Run up to Dad|run up to him]]
+[[Stay in your corner]]</tw-passagedata><tw-passagedata pid="86" name="Passage sans titre" tags="" position="499,2546">Double-cliquez sur ce passage pour le modifier.</tw-passagedata><tw-passagedata pid="87" name="Stay in your corner" tags="" position="1116,2808">You stay in your corner, scared. Looking at your father - if it is really him - with fear. You feel terribly sick and out of breath.
+
+&quot;What&#x27;S wrong?&quot; your father asks.
+
+He approaches you but you and tries to reach out to you. You stay in the corner, trying to keep him from touching you.
+
+His face seems to decompose. He is livid.
+
+&quot;I failed...&quot; he mutters.
+
+[[&quot;What?&quot;|I failed]]</tw-passagedata><tw-passagedata pid="88" name="I failed" tags="" position="1177,2941">&quot;This is not what should have happened. I came here to be a better father! I came here to make you happy. You had to think I was perfect. But I failed. And now my existence has no meaning.&quot;
+
+You get back a couple steps. Your hands violently shaking.
+
+&quot;You know she won&#x27;t come back. He wanted to be back in your life. But her? She regretted staying? It&#x27;s coming for her too. It&#x27;s coming so that she will get to enjoy her life. And she won&#x27;t come back&quot;
+
+[[Ask about her|Ask about her1]]
+[[Grab the gun]]</tw-passagedata><tw-passagedata pid="89" name="Ask about her1" tags="" position="1141,3109">Who is he talking about? Who&#x27;s not going to get back into your life?
+
+&quot;He told her about the parlour. The one where people go to get their wishes granted. He didn&#x27;t know they were real, he had not seen me yet... He always regretted leaving for so long. But your mother? She wished she had never stayed. She is probably already gone...&quot;
+
+Dad keeps getting closer and closer to you. Tears start running down his cheeks.
+
+&quot;I have no purpose. You saw me kill him. I cannot be perfect anymore. Yet you have no one now. What&#x27;s the point of us [[existing|existing1]] anymore?&quot;
+
+</tw-passagedata><tw-passagedata pid="90" name="existing1" tags="" position="1275,3196">Who is he talking about? Who&#x27;s not going to get back into your life?
+
+Dad keeps getting closer and closer to you. Tears start running down his cheeks.
+
+&quot;I have no purpose. And you have no one. What&#x27;s the point of us existing anymore?&quot;
+
+He takes the gun out of your hand and shoots you in the stomach. You fall down on the floor, struggling not to fall into the darkness.
+
+Before you lose consciousness, you have time to see him turn the gun back on himself. 
+
+You fall asleep.
+
+END.
+
+[[Back to Menu|Title page]]</tw-passagedata><tw-passagedata pid="91" name="Grab the gun" tags="" position="1340,3016">You are persuaded this cannot possibly be your father. This feels insane but you are incredibly scared. He gets closer and closer to you, a strange grin on his face as he moans about failing to good to you.
+
+You grab the gun and shoot.
+
+The gun falls off your hands, your tears run in streams. At this moment, no matter what IT was, you know in your heart that it was not lying. Your mother is not coming back. You are truly alone in this moment.
+
+The Robinsons are the ones who eventually find you after trying to pay a visit to your father three days later. You are curled up, starving, next to the rotting corpse of your dad, next to what looks like a rag doll with a burnt face.
+
+They bring you to the hospital. You take your copy of Treasure Island with you.
+
+END.
+
+[[Back to Menu|Title page]]</tw-passagedata><tw-passagedata pid="92" name="fridge" tags="" position="142,1888">There&#x27;s a drawing of Dad and yourself from when you were three. You don&#x27;t really remember it. Mom is in there. She looks mad.
+
+
+                               There&#x27;s a card for a divination parlour. 
+							   &quot;Helena Tyler. Medium. 15 years of experience. 
+							   Make your deepest wishes become reality&quot;
+							   
+
+There&#x27;s Mom&#x27;s number on a small card.
+&quot;In case of EXTREME emergency she wrote&quot;
+
+A postcard from a small rustic and magical village.
+
+A grocery list:
+-pineapple
+-~~vodka~~
+-kraft dinner
+-chicken
+-milk
+
+[[He probably forgot the groceries again|Go to kitchen (Exploration)]]</tw-passagedata></tw-storydata>
